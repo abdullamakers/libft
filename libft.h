@@ -6,7 +6,7 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:44:17 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/15 16:13:24 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/07/17 15:56:54 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,6 @@ char		*ft_strdup(const char *s1);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s1, char const *set);
+int			ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
