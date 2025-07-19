@@ -6,7 +6,7 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:54:55 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/15 10:24:15 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/07/19 16:06:38 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t			i;
-	unsigned char	*d;
-	unsigned char	*s;
+	size_t				i;
+	unsigned char		*d;
+	const unsigned char	*s;
 
-	i = 0;
 	if (!dst && !src)
 		return (NULL);
 	d = (unsigned char *)dst;
-	s = (unsigned char *)src;
-	while (n > i)
+	s = (const unsigned char *)src;
+	i = 0;
+	while (i < n)
 	{
 		d[i] = s[i];
 		i++;
 	}
-	return (d);
+	return (dst);
 }
