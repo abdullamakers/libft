@@ -6,7 +6,7 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:36:16 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/14 17:49:25 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/07/19 16:19:06 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t	x;
+	size_t	i;
 	char	*ab;
 
 	ab = (char *)b;
-	x = 0;
-	while (x < len)
+	i = 0;
+	while (i < len)
 	{
-		ab[x] = c;
-		x++;
+		ab[i] = c;
+		i++;
 	}
 	return (b);
 }
