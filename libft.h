@@ -6,13 +6,14 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:44:17 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/19 16:26:45 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/07/19 16:40:39 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stddef.h>
 # include <limits.h>
 # include <stdio.h>
 # include <stdlib.h>
