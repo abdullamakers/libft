@@ -6,7 +6,7 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:54:55 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/19 16:06:38 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:48:49 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		d[i] = s[i];
+		*d++ = *s++;
 		i++;
 	}
 	return (dst);
