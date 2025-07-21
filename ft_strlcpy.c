@@ -6,7 +6,7 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 07:42:16 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/19 16:07:12 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/07/21 15:23:17 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		}
 		dst[i] = '\0';
 	}
-	i = 0;
 	while (src[i])
 		i++;
 	return (i);
