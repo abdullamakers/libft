@@ -6,7 +6,7 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 12:17:36 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/19 15:08:57 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/07/25 16:04:46 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ static char	*empty_string(void)
 	return (pt);
 }
 
-char	*use_malloc(char const *s, size_t start, size_t full_len, size_t len)
+static char	*use_malloc(char const *s, size_t start, size_t full_len,
+	size_t len)
 {
 	size_t	x;
 	char	*pt;
