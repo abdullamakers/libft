@@ -1,15 +1,7 @@
-# ----------------------------
-#        Configuration
-# ----------------------------
-
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
-
-# ----------------------------
-#         Source Files
-# ----------------------------
 
 MANDATORY = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -22,18 +14,10 @@ MANDATORY = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
-# ----------------------------
-#        Object Files
-# ----------------------------
-
 OBJ_MANDATORY = $(MANDATORY:.c=.o)
 OBJ_BONUS = $(BONUS:.c=.o)
 
-# ----------------------------
-#        Targets
-# ----------------------------
-
-all: bonus
+all: $(NAME)
 
 $(NAME): $(OBJ_MANDATORY)
 	$(AR) $(NAME) $(OBJ_MANDATORY)
