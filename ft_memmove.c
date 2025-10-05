@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
+/*   By: server-2 <server-2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 07:23:56 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/21 15:37:24 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/10/05 08:08:01 by server-2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	d = (unsigned char *)dst;
-	s = (const unsigned char *)src;
 	if (!dst && !src)
 		return (NULL);
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
 	if (d < s)
 	{
 		while (len--)
