@@ -6,7 +6,7 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 11:46:02 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/15 11:50:19 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/10/18 10:58:48 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ int	ft_atoi(const char *s)
 	result = 0;
 	while (s[i] == 32 || (s[i] >= 9 && s[i] <= 13))
 		i++;
-	if (s[i] == '-' || s[i] == '+')
+	while (s[i] == '-' || s[i] == '+')
 	{
 		if (s[i] == '-')
-			sign = -1;
+			sign = -sign;
 		i++;
 	}
 	while (s[i] >= '0' && s[i] <= '9')
