@@ -6,7 +6,7 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 08:01:42 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/07/30 11:36:30 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/10/24 12:56:32 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		d_len++;
 	s_len = ft_strlen(src);
 	i = 0;
-	while (src[i] && d_len + i + 1 < dstsize)
+	while (src[i] && (d_len + i + 1 < dstsize))
 	{
 		dst[d_len + i] = src[i];
 		i++;
