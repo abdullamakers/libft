@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
+/*   By: server-2 <server-2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:44:17 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/08/01 17:10:17 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/11/02 20:08:40 by server-2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stddef.h>
 # include <limits.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
